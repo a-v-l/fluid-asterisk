@@ -4,7 +4,7 @@
     $('body').append('<div id="range-indice"></div>');
 
     /***
-    * helper-function zur Ermittlung der aktuellen Breite des ersten <p> in Zeichen
+    * helper-function to detect the width of the selected <p> in characters
     */
     var checkRR = function(elem){
         var txt = elem.text(),
@@ -50,7 +50,6 @@
             for ( i = 0; i <= 30; i++ ) {
                 between += "<rr>" + t.substr(44 + i,1) + "</rr>"
             }
-            //t = t.substr(0,44) + "*" + t.substr(45,29) + "*" + t.substring(75,t.length);
             el.html(start + between + end);
         } else if(l > 0){
             $(this).html(t);
